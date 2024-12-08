@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    /* background-color:#060912;  */
+    background-image: url("https://images.unsplash.com/photo-1547341074-5d1360d6c866?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+
+.container{
+    width:95%;
+    max-width: 35rem;
+    background-color:rgba(100, 100, 100, .8);
+    border-radius:.5rem;
+    margin-inline:auto;
+    margin-block: 10rem;
+    padding:1rem;
+    position:relative;
+    display:grid;
+    gap:0.5rem;
+    
+}
+
+.inputbox_container{
+    width:100%;
+    background-color:rgba(255, 255, 255, .7);
+    border-radius: .3rem;
+    padding: 1.5rem;
+}
+
+.label{
+    /* color:#fff; */
+}
+
+.inputs_wrapper{
+    display:flex;
+    justify-content: space-between;
+    margin-block-start:1rem;
+}
+
+input, select{
+    background-color:transparent;
+    border:none;
+    /* color:#fff; */
+    font-size:1.5rem;
+
+    &:focus{
+        outline:none;
+    }
+}
+
+input{
+    font-weight:bold;
+    font-size:2rem;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.swap_btn{
+    background-color:#fff;
+    border:none;
+    border-radius:50%;
+    width:3rem;
+    height: 3rem;
+    padding:.7rem;
+    cursor:pointer;
+    position:absolute;
+    inset:50%;
+    translate: -50% -50%;
+}
